@@ -1,0 +1,23 @@
+.btn{
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: .07rem;
+    cursor: pointer;
+}
+
+.btn-primary{
+    background-color: var(--darkDesaturatedBlue);
+    color: var(--softLightGrayishBlue);
+    transition: all .3s ease-in;
+}
+
+.btn-primary:hover{
+    color: var(--white);
+}
+
+.form-subs__info .btn{
+    align-self: center;
+}

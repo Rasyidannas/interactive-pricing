@@ -1,0 +1,68 @@
+.toggle-wrapper{
+    margin: 2rem 0 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.toggle-wrapper label {
+    color: var(--grayishBlue);
+    font-size: .9rem;
+}
+
+.toggle-input{
+    display: none;
+}
+
+.toggle-input:checked ~ .toggle-custom{
+    background: var(--softCyan);
+}
+
+.toggle-custom:hover{
+    cursor: pointer;
+}
+
+.toggle-input:checked ~ .toggle-custom > .toggle-handle{
+    left: 55%;
+}
+
+.toggle-custom{
+    background: var(--lightGrayishBlue);
+    display: inline-block;
+    height: 1.5rem;
+    width: 3rem;
+    border-radius: 2rem;
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+.toggle-handle{
+    height: 1rem;
+    width: 1rem;
+    background: var(--white);
+    border-radius: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    transition: all .2s ease-in-out;
+}
+
+.toggle-hint{
+    font-size:.7rem;
+    color: var(--lightRed);
+    padding: .2rem .5rem;
+    margin-left: .5rem;
+    border-radius: 2rem;
+    background: hsla(15, 100%, 70%, 0.2);
+    position: absolute;
+}
+
+@media (max-width: 720px){
+    .toggle-hint span{display: none;}
+
+    .toggle-hint::before{
+        content: "-";
+    }
+}

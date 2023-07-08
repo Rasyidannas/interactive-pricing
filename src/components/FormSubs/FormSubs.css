@@ -1,0 +1,94 @@
+.form-subs{
+    position: relative;
+    width: 55%;
+    margin: 3.5rem auto;
+    padding: 2.5rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+}
+
+.form-subs__detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form-subs__detail h3{
+    color: var(--grayishBlue);
+    font-size: 1rem;
+    letter-spacing: .1rem;
+}
+
+.form-subs__detail h1{
+    font-size: 3rem;
+
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.form-subs__detail h1 span{
+    color: var(--grayishBlue);
+    font-size: 1rem;
+}
+
+.form-subs__range{
+    width: 100%;
+}
+
+.form-subs__info{
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-subs__info ul {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.form-subs__info ul li{
+    list-style: none;
+    text-align: left;
+    color: var(--grayishBlue);
+    font-size: .75rem;
+
+    display: flex;
+    gap: 1rem;
+}
+
+/* line */
+.line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--lightGrayishBlue);
+}
+
+@media (max-width: 1200px){
+    .form-subs{width: 70%;}
+}
+
+@media (max-width: 720px){
+    .form-subs__detail{
+        flex-direction: column;
+    }
+
+    .form-subs__detail h1{
+        order: 1;
+    }
+
+    .form-subs__info{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .form-subs__info ul li{
+        text-align: center;
+        justify-content: center;
+    }
+}

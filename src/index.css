@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+:root {
+  font-family: 'Manrope', sans-serif;
+  line-height: 1.5;
+  font-weight: 600;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  /* Primary Color */
+  --softCyan: hsl(174, 77%, 80%);
+  --strongCyan: hsl(174, 86%, 45%);
+  --lightGrayishRed: hsl(14, 92%, 95%);
+  --lightRed: hsl(15, 100%, 70%);
+  --paleBlue: hsl(226, 100%, 87%);
+
+  /* Neutral Color */
+  --white: hsl(0, 0%, 100%);
+  --veryPaleBlue: hsl(230, 100%, 99%);
+  --softLightGrayishBlue: hsl(224, 65%, 95%);
+  --lightGrayishBlue: hsl(223, 50%, 87%);
+  --grayishBlue: hsl(225, 20%, 60%);
+  --darkDesaturatedBlue: hsl(227, 35%, 25%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 1rem = 15px */
+  font-size: 93.75%;
+}
+
+body{
+  color: var(--darkDesaturatedBlue);
+  background: var(--softLightGrayishBlue) url('../src/assets/pattern-circles.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 5%;
+  padding: 2rem 0;
+}
+
+#root{
+  text-align: center;
+}
+
+p{
+  font-size: 1rem;
+  color: var(--grayishBlue);
+}
+
+@media (max-width: 720px){
+  /* 1rem = 12px */
+  html{font-size: 75%;}
+}
+
+@media (max-width: 480px){
+  /* 1rem = 10 */
+  html{font-size: 62.5%;}
+}

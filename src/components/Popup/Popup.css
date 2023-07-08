@@ -1,0 +1,33 @@
+.popup-wrapper{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3rem 2.5rem 2.5rem 2.5rem;
+    background: var(--white);
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.popup-info{
+    padding: .5rem 1.5rem;
+    background: hsla(174, 76%, 80%, 0.3);
+    border-radius: 2rem;
+    color: var(--strongCyan);
+}
+
+.popup-wrapper p{
+    width: 340px;
+}
+
+.popup-wrapper.hidden{
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.popup-wrapper.show{
+    transform: translate(-50%, -50%) scale(1);
+}
